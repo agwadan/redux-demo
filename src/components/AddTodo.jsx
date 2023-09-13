@@ -18,7 +18,7 @@ const AddTodo = () => {
       <form onSubmit={addTodoHandler}>
         <input
           type="text"
-          value={input}
+          value={todo}
           onChange={(e) => setTodo(e.target.value)}
         />
         <button type="submit">Add Task</button>
