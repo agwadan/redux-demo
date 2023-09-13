@@ -20,9 +20,12 @@ export const todoSlice = createSlice({
 
     //Reducer to remove a task from the todo list
     removeTodo: (state, action) => {
-      state.todos = state.todos.filter(todo => {
+      console.log(state);
+      console.log(action);
+      state.todos = state.todos.filter(todo => (
         todo.id !== action.payload
-      })
+      ))
+      console.log(state.todos);
     }
   }
 })
